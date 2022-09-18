@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  background-color: whitesmoke;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  background-color: rgb(137, 92, 251);
+  padding: 20px;
+  margin: 0;
+}
+
+h3 {
+  background-color: rgb(251, 251, 252);
+  border-radius: 50%;
+  padding: 15px 15px 15px 25px;
+  border: 1px solid rgb(141, 140, 140);
+}
+
+form {
+  width: 50%;
+  margin: auto;
+  border: 1px solid grey;
+  padding: 25px;
+  background-color: rgb(237, 231, 253);
+}
+
+img {
+  margin: 25px;
+  border-radius: 35px;
+  width: 150px;
+  height: 150px;
+  border: 4px solid purple;
+  border: outset 4px black;
+}
+
+img.collage {
+  width: 300px;
+  height: 300px;
+  object-fit: fill;
+}
+
+img.info {
+  /* display: inline; */
+}
+
+input[type="text"] {
+  display: block;
+  margin: 15px 0 30px 0;
+  width: 99%;
+}
+
+input[type="date"] {
+  display: block;
+  margin: 15px 0 30px 0;
+}
+
+input[type="checkbox"] {
+  margin: 1px 0 1px 0;
+}
+
+input[type="submit"] {
+  display: block;
+  margin: 30px 0 30px 0;
+  width: 100%;
+  background-color: rgb(193, 173, 203);
+  color: grey bold;
+}
+
+label {
+  margin-bottom: 20px;
+}
+
+p.comment {
+  border-radius: 7%;
+  background-color: rgb(207, 178, 234);
+  font-style: oblique;
+  margin-bottom: 30px;
+}
+
+p.doginfo {
+  padding: 30px;
+}
+
+textarea {
+  margin: 15px 0 15px 0;
+  width: 99%;
+}
+
+#submit {
+  font-stretch: expanded;
+}
+
+.article {
+  padding: 35px;
+  font-size: 2vw;
+}
+
+.container {
+  background-color: rgb(139, 97, 203);
+  width: 90%;
+  margin: 75px auto 25px auto;
+  border-radius: 10px;
+}
+
+.containerfotos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.footer {
+  width: 50px;
+  margin: auto;
+}
+
+.section {
+  display: grid;
+  background-color: blanchedalmond;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: auto auto auto auto auto auto;
+  background-color: rgb(213, 213, 244);
+  border: 1px rgb(204, 178, 204) solid;
+  padding: 40px;
+  align-items: center;
+  justify-content: space-around;
+  justify-items: center;
+  border-radius: 30px;
+}
+
+.section h3 {
+  justify-content: center;
+}
+
+@media screen and (max-width: 980px) {
+  .containerfotos {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: flex-start;
+  }
+}
